@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+.calculator{
+           background-color:black;
+           padding: 20px;
+           border-radius: 15px;
+           width: 400px;
+           }
+
+
+#display{
+        background-color:black;
+        color:lightgreen;
+        font-size: 2em;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: right;
+        margin-bottom: 15px;
+        border: 1px solid white;
+        } 
+
+h1{
+    color: white;
+    font-size: 2em;
+}
+.buttons{
+         display: grid;
+         grid-template-columns: auto auto auto auto;
+         gap: 10px;
+        }
+
+        
+.buttons button{  
+                padding: 10px;
+                font-size: 1.2em;
+                border: none;
+                border-radius: 10px;
+                background-color:aquamarine;
+                color:black;
+                box-shadow: inset;
+                
+                
+               }
+
+
+.buttons button:hover{
+                      transform: scale(1.1);
+                     }
+
+
+                     @media only screen and (max-width: 1200px) {
+                      .calculator {
+                       background-color: lightblue;
+                                   }
+                                                                 }
+                     @media only screen and (max-width: 800px) {
+                      .calculator {
+                       background-color:aqua;
+                                  }
+                                                                }
+                     @media only screen and (max-width: 600px) {
+                    .calculator {
+                      background-color:chartreuse;
+                                }
+                                                                }
+                     @media only screen and (max-width: 400px) {
+                    .calculator {
+                     background-color:darkgoldenrod;
+                                }
+                                                                }
