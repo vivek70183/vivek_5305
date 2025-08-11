@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-white">
+
+    <div class="flex flex-col h-screen w-screen">
+
+        <!-- Header -->
+        <div class="flex items-center bg-black text-white shadow p-1 h-20 rounded mx-1">
+            <img src="media_files/logo.jpg" alt="youtube logo" class="object-contain h-[60px] w-20 m-2" />
+
+            <h1 class="text-white font-semibold font-sans text-[30px] m-1">YouTube</h1>
+
+            <input type="text" value="Search 🔍"
+                class="m-10 w-full md:w-[60vw] h-10 border rounded-xl px-4 text-black" />
+
+            <img src="media_files/miracast image.jpg" alt="miracast image" class="h-[50px] w-[50px] mr-[70px]" />
+            <button class="text-[30px]">🔔</button>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-6 gap-1 m-1 h-fit">
+
+            <!-- Sidebar -->
+            <div class="col-span-1 bg-black text-white rounded p-2">
+                <div class="hover:bg-gray-700 p-3 rounded flex items-center gap-3 cursor-pointer">
+                    <span>🏠</span> <span>Home</span>
+                </div>
+                <div class="hover:bg-gray-700 p-3 rounded flex items-center gap-3 cursor-pointer">
+                    <span>🔥</span> <span>Trending</span>
+                </div>
+                <div class="hover:bg-gray-700 p-3 rounded flex items-center gap-3 cursor-pointer">
+                    <span>📺</span> <span>Subscriptions</span>
+                </div>
+                <div class="hover:bg-gray-700 p-3 rounded flex items-center gap-3 cursor-pointer">
+                    <span>📚</span> <span>Library</span>
+                </div>
+                <div class="hover:bg-gray-700 p-3 rounded flex items-center gap-3 cursor-pointer">
+                    <span>🕘</span> <span>History</span>
+                </div>
+            </div>
+
+            <!-- Filter Tags -->
+            <div
+                class="col-span-5 bg-black text-white rounded p-2 flex flex-wrap gap-2 items-center max-h-fit shadow-inner space-x-7">
+                <div class="px-3 py-1 rounded-xl hover:bg-gray-700 cursor-pointer">All</div>
+                <div class="px-3 py-1 rounded-xl hover:bg-gray-700 cursor-pointer">Music</div>
+                <div class="px-3 py-1 rounded-xl hover:bg-gray-700 cursor-pointer">Mixes</div>
+                <div class="px-3 py-1 rounded-xl hover:bg-gray-700 cursor-pointer">Film Criticisms</div>
+                <div class="px-3 py-1 rounded-xl hover:bg-gray-700 cursor-pointer">Gaming</div>
+                <div class="px-3 py-1 rounded-xl hover:bg-gray-700 cursor-pointer">Podcasts</div>
+                <div class="px-3 py-1 rounded-xl hover:bg-gray-700 cursor-pointer">Web Series</div>
+                <div class="px-3 py-1 rounded-xl hover:bg-gray-700 cursor-pointer">Supervillains</div>
+                <div class="px-3 py-1 rounded-xl hover:bg-gray-700 cursor-pointer">Live</div>
+                <div class="px-3 py-1 rounded-xl hover:bg-gray-700 cursor-pointer">Theater</div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-auto">
+            <div class="bg-white rounded shadow  flex justify-between items-center ">
+                <img src="" alt="thumbnail" class="w-full rounded-t">
+            </div>
+            <div class="p-2 flex space-x-2"></div>
+
+            <div class="w-10 h-10 bg-gray-300 rounded-full">
+            </div>
+            <h3 class="font-semibold text-sm">sample video title</h3>
+
+            <p class="text-gray-600 text-xs"> channel name . 1M views .2 months ago</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
